@@ -126,6 +126,7 @@ function checkAnswer(){
     if(userClickedPattern.length === gamePattern.length){
          //if so, check if the colors are the same
          for(var i = 0; i < gamePattern.length; i++){
+            //If not, call gameOver to end the game 
             if(userClickedPattern[i] !== gamePattern[i]){
                 isGameOver = true;
                 gameOver();
@@ -173,6 +174,9 @@ function gameOver(){
     setTimeout(function(){
         $("body").removeClass("game-over")
     }, 400)
+
+    //Play "wrong" sound
+    playSound("wrong");
 }
 
 
