@@ -1,2 +1,2 @@
 # SimonGame
-A cool Simon Game implementing JavaScript and JQuery :)
+A cool Simon Game version implementing JavaScript and JQuery :)
